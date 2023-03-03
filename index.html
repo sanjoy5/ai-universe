@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Universe Hub</title>
+    <!-- Bootstrap CSS Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Custom Css  -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- Header Section Start  -->
+
+    <header class="bg-white py-5 px-3">
+
+        <div class="container text-center">
+            <h2 class="fs-2 fw-bolder mb-3">AI Universe Hub</h2>
+            <button onclick="showSortingTools()" class="btn btn-warning btn-lg">Sort By Date</button>
+        </div>
+
+    </header>
+
+    <!-- Header Section End  -->
+
+
+    <!-- Main Section Start  -->
+
+    <main>
+
+        <!-- Display Card Section Start  -->
+
+        <section class="container my-5">
+
+            <div id="tools-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+
+            </div>
+
+        </section>
+
+        <!-- Display Card Section End  -->
+
+
+
+        <!-- Loader  -->
+        <section id="loader" class="container mb-5 d-none">
+            <div style="height: 300px;" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border text-warning" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div id="see-more" class="text-center mb-5 d-none">
+            <button id="btn-see-more" class="btn btn-warning btn-lg">See More</button>
+        </div>
+
+    </main>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="toolDetailModal" tabindex="-1" aria-labelledby="toolDetailModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog mx-auto modal-dialog-centered my-5" style="max-width:1200px;width:85%;">
+            <div id="tools-details" class="modal-content bg-light p-3">
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Section End  -->
+
+
+
+
+    <!-- Bootstrap JavaScript Link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Custom JavaScript Link  -->
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
